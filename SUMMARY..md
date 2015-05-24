@@ -2,4 +2,5 @@
 
 * [Introduction](introduction.md)
 * Build
+   * Installation
 
