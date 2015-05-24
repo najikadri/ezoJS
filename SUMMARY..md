@@ -1,4 +1,5 @@
 # Summary
 
-* [Introduction](docs/introduction.md)
+* [Introduction](introduction.md)
+* Build
 
