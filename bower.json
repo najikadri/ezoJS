@@ -2,7 +2,7 @@
   "name": "ezoJS",
   "version": "0.2.0",
   "description": "JavaScript Website Builder from a single JS file",
-  "main": "ezo-alpha.js",
+  "main": "src/ezo-0.2.0.js",
   "keywords": [
     "website",
     "builder",
