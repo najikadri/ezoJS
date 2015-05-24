@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](introduction.md)
+* [Introduction](docs/introduction.md)
 * Build
    * Installation
 
