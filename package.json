@@ -1,29 +1,32 @@
 {
   "name": "ezojs",
   "version": "0.2.0",
+  "release": "Alpha",
   "description": "JavaScript Website Builder from a single JS file",
-  "main": "src/ezo-0.2.0.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Naji Kadri <naji-newman-2000@hotmail.com> (http://thelightbulbgames.weebly.com)",
+  "logo": "https://raw.github.com/najikadri/ezojs/master/cover.png",
+  "homepage": "https://najikadri@github.com/najikadri/ezojs.git",
+  "bugs": "https://github.com/najikadri/ezojs/issues",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "main": "./src/ezo.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/najikadri/ezoJS.git"
+    "url": "https://najikadri@github.com/najikadri/ezojs.git"
   },
   "keywords": [
+    "html",
+    "html5",
     "website",
     "builder",
-    "website",
-    "builder",
+    "css",
     "javascript",
-    "framework",
     "js",
-    "files"
+    "nodes",
+    "pages",
+    "dom"
   ],
-  "author": "Naji Kadri",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/najikadri/ezoJS/issues"
-  },
-  "homepage": "https://github.com/najikadri/ezoJS#readme"
+  "devDependencies": {
+    "jquery": "^1.11.2"
+  }
 }
