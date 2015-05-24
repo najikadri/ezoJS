@@ -11,6 +11,11 @@
     "js",
     "files"
   ],
+  "ignore": [
+     "readme.md",
+     "bower.json",
+     "ezoJS.png"
+    ],
   "authors": [
     "Naji Kadri"
   ],
