@@ -1,0 +1,29 @@
+{
+  "name": "ezojs",
+  "version": "0.2.0",
+  "description": "JavaScript Website Builder from a single JS file",
+  "main": "src/ezo-0.2.0.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/najikadri/ezoJS.git"
+  },
+  "keywords": [
+    "website",
+    "builder",
+    "website",
+    "builder",
+    "javascript",
+    "framework",
+    "js",
+    "files"
+  ],
+  "author": "Naji Kadri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/najikadri/ezoJS/issues"
+  },
+  "homepage": "https://github.com/najikadri/ezoJS#readme"
+}
