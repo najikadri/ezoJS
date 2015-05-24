@@ -1,12 +1,12 @@
 {
-  "name": "ezoJS",
+  "name": "ezojs",
   "version": "2.3.0",
-  "homepage": "https://github.com/najikadri/ezoJS",
+  "homepage": "https://github.com/najikadri/ezojs",
   "authors": [
     "Naji Kadri <naji-newman-2000@hotmail.com>"
   ],
   "description": "JavaScript Website Builder from a single JS file",
-  "main": "src/ezo.js",
+  "main": "./src/ezo.js",
   "keywords": [
     "website",
     "builder",
