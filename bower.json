@@ -1,21 +1,28 @@
 {
   "name": "ezoJS",
-  "version": "0.2.0",
+  "version": "2.3.0",
+  "homepage": "https://github.com/najikadri/ezoJS",
+  "authors": [
+    "Naji Kadri <naji-newman-2000@hotmail.com>"
+  ],
   "description": "JavaScript Website Builder from a single JS file",
   "main": "src/ezo.js",
   "keywords": [
     "website",
     "builder",
-    "JavaScript",
-    "instant",
+    "files",
+    "framework",
     "js",
-    "files"
-  ],
-  "authors": [
-    "Naji Kadri"
+    "html",
+    "html5",
+    "dom",
+    "nodes",
+    "css",
+    "pages",
+    "javascript",
+    "web",
   ],
   "license": "MIT",
-  "homepage": "https://github.com/najikadri/ezoJS.git",
   "ignore": [
     "**/.*",
     "node_modules",
