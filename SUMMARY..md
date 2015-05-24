@@ -5,4 +5,5 @@
    * Installation
    * CSS Syntax
    * Webpage
+   * Page Manager
 
