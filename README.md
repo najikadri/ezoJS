@@ -15,6 +15,9 @@ Bower
 ```
 $ bower install ezojs
 ```
+## How it works
+Read the [introduction](docs/introduction.md)
+
 
 
 
