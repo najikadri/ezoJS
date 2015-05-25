@@ -122,7 +122,24 @@ example : `px(10)` returns `"10px"`
 ##eDom
 eDom is a DomCreator **(see the source code)** object that creates the node and elements.It is used by ezoJS selector for manipulation.
 
-*Note: If an arguments is not satisfied with a parameter, ezoJS will not return undefined since it uses arguments like Java. **(check source code)** *
+*Note: If an arguments is not satisfied with a parameter, ezoJS will not return undefined since it uses arguments like Java. **(check code below)** *
+```javascript
+this.header = function (num,id,cl) {
+		if (arguments[2] != undefined) {
+			
+			return '<h'+num+' id='+id+' class='+cl+'></h'+num+'>';
+		}
+		else if (arguments[1] != undefined) {
+			
+			return '<h'+num+' id='+id+'></h'+num+'>';
+		}
+		else {
+			
+			return '<h'+num+'>'+'</h'+num+'>'
+		}
+	};
+```
+
 ####defText()
 return a default header with a text `"Hello World!"`
 ####header(num,id,cl)
@@ -132,6 +149,9 @@ example:
 ```javascript
  var i = eDom.header(1,"title","text");
 ````
+####par(id,cl)
+return a header with id and class
+
 
 
 
