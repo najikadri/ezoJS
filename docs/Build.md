@@ -43,6 +43,11 @@ var styles = {
     }
 }
 ```
+
+There is a second way to make CSS styles using a **2D array**:
+```javascript
+var style = [["background-color","blue"],["text-align","center"]];
+```
 ## Pages
 In ezoJS pages are actually a function. eManager (learn more from API section) adds the pages with their name and runs them whenever needed.
 ```javascript
