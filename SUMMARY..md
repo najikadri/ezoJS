@@ -15,4 +15,5 @@
    * PX
    * eDom
    * e$(doc)
+   * e$(dom)
 
