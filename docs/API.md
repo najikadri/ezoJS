@@ -151,6 +151,94 @@ example:
 ````
 ####par(id,cl)
 return a header with id and class
+####clone(n,id)
+clone an existing node and return the node with a new id
+####lnBreak()
+return a line break
+####horRule()
+return a horizontal rule
+####oList(id)
+return an ordered list with an id
+####uList(id)
+return an unordered list with an id
+####link(id,link,txt)
+returns a link with an id and a href and a text
+####img(id,src,alt)
+returns an image with id and src and alt
+####toListItems(arr)
+convert array into li elements for the lists `<ul> & <ol>`
+####addListItems(id,it)
+finds list with the  id passed and add list items to it
+####div(id,cl)
+returns a div wit id and class
+####form(id,action,method)
+returns a form with id and its action and method
+####input(id,type,name,value)
+return an input with id and its type, name and value
+####pre(id,cl)
+returns a preview
+####code(id,lng)
+returns code with id and its language. Use eSyntax to set the language of the code for syntax highlighting
+####button(id,type,cl,name,value)
+returns a button with id and its type and class with name and value
+####script(src,type,async)
+returns a script `<script></script>` with its source , type and boolean if async or defer
+####stylesheet(href,rel,type)
+returns a link with href and rel and type
+
+*Note: It is a `<link></link>` thus it can be used for things other than stylesheet. But in ezoJS is named stylesheet since it is commonly used.*
+####custom(tag,id,cls)
+returns a custom tag for you.
+
+example:
+```javascript
+var i = eDom.custom('td',"table");
+```
+returns
+```html
+<td id="table>"></td>
+```
+####meta(name,cont)
+returns meta with its name and content
+####init(n)
+initialize a node with ezoJS functioniality
+
+##e$(doc)
+functions found are in initDoc variable. This selection provides the functioniality for the document. Since e$("doc") selector uses eDom to create the nodes, the functions below are those who is not found in eDom or different from them
+
+*Note: To add any element in the document just use `e$("doc").addX` where **X** is the name of the element found in eDom.*
+
+example:
+```javascript
+var i = eDom.header(1,"title"); //returns a header
+e$("doc").addHeader(1,"title");
+/**uses eDomto create element 
+and append it to the body of the document.
+Thus functions found in eDom can be found in e$("doc") by adding add
+*/
+```
+####addStyleArray
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
