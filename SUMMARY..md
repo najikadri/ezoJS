@@ -11,4 +11,5 @@
    * eColor
    * eCSS eNode ePage
    * eManager
+   * eData
 
