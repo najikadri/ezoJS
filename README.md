@@ -17,6 +17,8 @@ $ bower install ezojs
 ```
 ## How it works
 Read the [introduction](docs/introduction.md) page from the document to check what is ezoJS and how it works
+##document
+read the document from the [summary page](SUMMARY.md)
 ## Contribute
  Bugs or issues found in ezoJS is in the main ezo.js file under ***@bug*** or ***@issue***.
  
