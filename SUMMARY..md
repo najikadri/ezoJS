@@ -2,4 +2,5 @@
 
 * Introduction
 * Installation
+* Build
 
