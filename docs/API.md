@@ -217,7 +217,118 @@ and append it to the body of the document.
 Thus functions found in eDom can be found in e$("doc") by adding add
 */
 ```
-####addStyleArray
+####addStyleArray(arr,cl)
+adds a style array for  elements with class passed
+####setCSS(styelsheet,cl)
+adds a style for elemnts with class passed
+####cloneNode(n,id)
+clones a node with a new id passed and append it to the body
+####addSyntax(id,id2,lang)
+creates a full functioning syntax highlighting in a pre code elements.
+`e$("doc").addSyntax("code","timer",eSyntax.java)`
+
+`<pre id="code"><code id="timer" class="java"></code>
+</pre>`
+####insert(n) 
+insert a node. It is used most by eDom if the programmer didn't want to use pre-made functions.
+####bodyCSS(stylesheet)
+set the document's body CSS
+####bodyCSSArray(arr)
+set the document's body CSS by array
+####init()
+initialize all elements in the document for example:
+```html
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+     <title> ezoJS Demo </title>
+     <script src="ezo.min.js"></script>
+     <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="empty"></div>
+  </body>
+ </html>
+```
+This div is not created by ezoJS thus it does not have ezoJS functions. when we call `e$("doc").init()` it initialize the div with ezoJS functioniality thus being usable for  development.
+####setTitle(title)
+set title of the document
+####destroy()
+destroy the website **(close tab)**
+####clear()
+set the body of the document with zero elements
+
+## e$(dom)
+also known as `e$(node)`. This selects a node from the body by its id and adds ezoJS functions. Some function replace CSS styling for fast manipulation.
+####setText(string)
+set text of the node
+####appendText(string)
+append text of the node
+####setSize(width,height)
+set height and width of the node
+####setBGColor(color)
+change the color of the background of the node
+####setFontSize(size)
+set font size of the text in node
+####alignText(align)
+set alignment of the text in the node
+####getNodeName()
+returns the tag of the node
+####addStyleArray(arr)
+set style of the node by array
+####setCSS(stylesheet)
+set style of the node
+####addClass(cl)
+add a class for the node
+####removeClass(cl)
+remove class from the node
+####setID(id)
+change or set id of the node
+####setAction(function)
+set an action when the node is clicked
+####insert(n)
+insert a node inside the node **(child node)**
+####getChild(num)
+select child node with number passed
+####insertAt(index,n)
+insert a child node at the index
+####insertAll(n)
+insert all nodes array to the node
+####setLink(link)
+set link of the node
+####setName(name)
+set name attribute of the node
+####setValue(val)
+set value attribute of the node
+####destory()
+remove the node from the body
+
+##parseCSS(val)
+function used to parse keys of an object to be compatible for CSS styling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
