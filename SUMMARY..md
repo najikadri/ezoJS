@@ -14,4 +14,5 @@
    * eData
    * PX
    * eDom
+   * e$(doc)
 
