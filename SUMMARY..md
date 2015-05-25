@@ -3,4 +3,5 @@
 * Introduction
 * Installation
 * Build
+* API
 
