@@ -10,4 +10,5 @@
 * API
    * eColor
    * eCSS eNode ePage
+   * eManager
 
