@@ -20,6 +20,17 @@ Read the [introduction](docs/introduction.md) page from the document to check wh
 ##document
 Read  [ezoJS GitBook](http://najikadri.gitbooks.io/ezojs/) from the website.
 or read the document from the [summary page](SUMMARY..md) in Github
+##Beta Release Features
+ The first **beta version** of ezoJS will be released once all features listed below are added.
+ 
+ Read the wiki for more information about the beta verison features.
+
+- [ ] Execute and code php in ezoJS
+- [ ] Table creation by eDom
+- [ ] Save pages and nodes locally by eData
+- [ ] More ezoJS node manipulation and animation
+- [ ] eSQL : Store data in local storage like SQL
+
 ## Contribute
  Bugs or issues found in ezoJS is in the main ezo.js file under ***@bug*** or ***@issue***.
  
