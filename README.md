@@ -5,7 +5,7 @@ JavaScript Website Builder from a single JS file
 ## What is ezoJS
 ezoJs is a JavaScript Framework. It can builds wesbites instantly with a single JS file.
 ### Version
-**Alpha** - 0.2.0
+**Alpha** - 0.2.0 [(Changelog)](changelog.md)
 ##Installation
 Git
 ```
