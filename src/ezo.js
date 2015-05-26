@@ -249,7 +249,7 @@ var DomCreator = function () {
 	};
 	
 	
-	this.header = function (num,id,cl) {
+	this.heading = function (num,id,cl) {
 		if (arguments[2] != undefined) {
 			
 			return '<h'+num+' id='+id+' class='+cl+'></h'+num+'>';
@@ -478,6 +478,18 @@ var DomCreator = function () {
 		}
 	};
 	
+	this.footer  = function (id,cl) {
+		if (arguments[1] != undefined) {
+			return  '<footer id='+id+' class='+cl+'> </footer>';
+		}
+		else if (arguments[0] != undefined) {
+			return '<footer id='+id+'> </footer>';
+		}
+		else {
+			return '<footer></footer>';
+		}
+	};
+	
 	this.init = function (n) {
 		window.initNode(n);
 	};
@@ -496,8 +508,8 @@ var initDoc = function (doc) {
 		$('body').append(node);
 	};
 	
-	doc.addHeader = function (num,id,cl) {
-		var node = eDom.header(num,id,cl)
+	doc.addHeading = function (num,id,cl) {
+		var node = eDom.heading(num,id,cl)
 		$('body').append(node);
 	};
 	
@@ -522,7 +534,12 @@ var initDoc = function (doc) {
 	doc.addDiv = function (id,cl) {
 		var node = eDom.div(id,cl);
 		$('body').append(node);
-	}
+	};
+	
+	doc.addFooter  = function (id,cl) {
+		var node = eDom.footer(id,cl);
+		$('body').append(node);
+	};
 	
 	doc.addStyleArray = function (arr,cl) {
 		for (var i=0; i < arr.length;i++) {
@@ -584,14 +601,14 @@ var initDoc = function (doc) {
    };
    
    doc.insert = function (n) {
-	   if (typeof(n) === 'Array') {
-		   for (var i=0;i < n.length;i++) {
-			   $('body').append(n[i]);
-		   }
-	   }
-	   else {
-		     $('body').append(n);
-	   }
+	   
+	$('body').append(n);
+   };
+   
+   doc.insertAll = function (n) {
+	  for (var i=0;i < n.length;i++) {
+			  $('body').append(n[i]);
+		  }
    }
    
    doc.bodyCSS = function (stylesheet) {
@@ -731,21 +748,28 @@ var initNode = function (dom) {
    
    dom.setAction = function (fun)  {
 	   $(dom).click(fun);
-   }
+   };
    
    dom.insert = function (n) {
-	    if (typeof(n) === 'Array') {
-		   for (var i=0;i < n.length;i++) {
-			   $(dom).append(n[i]);
-		   }
-	   }
-	   else {
+
 		     $(dom).append(n);
-	   }
-   }
+   };
+   
+   dom.insertAll = function (n) {
+   
+    for (var i=0;i < n.length;i++) {
+		 $(dom).append(n[i]);
+	}
+	};
    
    dom.getChild = function (num) {
 	   return dom.children[num];
+   };
+   
+   dom.selectChild = function (num) {
+	   var uid = dom.getChild(num).id;
+	   console.log(uid);
+	   return e$(uid);
    };
    
    dom.insertAt = function (index,n) {
