@@ -142,7 +142,7 @@ this.header = function (num,id,cl) {
 
 ####defText()
 return a default header with a text `"Hello World!"`
-####header(num,id,cl)
+####heading(num,id,cl)
 return a header with an id and class and the number of the header.
 
 example:
@@ -175,6 +175,8 @@ returns a div wit id and class
 returns a form with id and its action and method
 ####input(id,type,name,value)
 return an input with id and its type, name and value
+####footer(id,cl)
+add a footer to the document
 ####pre(id,cl)
 returns a preview
 ####code(id,lng)
@@ -231,6 +233,8 @@ creates a full functioning syntax highlighting in a pre code elements.
 </pre>`
 ####insert(n) 
 insert a node. It is used most by eDom if the programmer didn't want to use pre-made functions.
+####insertAll(n)
+insert nodes through array
 ####bodyCSS(stylesheet)
 set the document's body CSS
 ####bodyCSSArray(arr)
@@ -288,6 +292,8 @@ change or set id of the node
 set an action when the node is clicked
 ####insert(n)
 insert a node inside the node **(child node)**
+####insertAll (n)
+insert nodes isnide node through array
 ####getChild(num)
 select child node with number passed
 ####insertAt(index,n)
