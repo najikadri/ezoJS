@@ -120,7 +120,17 @@ search for a page with the name provided and delete it from the array **(set as 
 ####get(name)
 get the page as function rather than calling it
 ####onLoad (func)
-set a function that is called when a page is ran or appended by default
+set a function that is called when a page is ran or appended by default.
+
+example:
+```javascript
+eManager.onLoad(function () {
+  alert("page successfully loaded!");
+})
+eManager.add(homePage,"index");
+eManager.append("index");
+```
+Once the `"index"` page is loaded , the function onLoad will be called and it will alert the user
 
 ##eData
 eData is a data manager that saves nodes, css , and pages locally for later use. 
