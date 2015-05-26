@@ -22,7 +22,7 @@
 
 /** 
 *  These are few flat design UI colours for your CSS.
-* The colours are provided by http://flatuicolors.com/
+* The colours are provided by http://flatuicolors.com/ and http://www.flatuicolorpicker.com/ 
 */
 
 var eColor = {
@@ -45,7 +45,18 @@ var eColor = {
   pumpkin: "#d35400",
   pomegranate: "#c0392b",
   silver: "#bdc3c7",
-  asbestos: "#7f8c8d"
+  asbestos: "#7f8c8d",
+  monza: "#CF000F",
+  flamingo: "#EF4836",
+  waxFlower: "F#1A9A0",
+  cabaret: "#D2527F",
+  dodgerBlue: "#19B5FE",
+  pictonBlue: "#22A7F0",
+  malibu: "#6BB9F0",
+  gossip: "#87D37C",
+  shamrock: "#2ECC71",
+  capeHoney: "#FDE3A7"
+  
 };
 
 /**
@@ -64,8 +75,13 @@ var eCon = {
 	left: "left",
 	block: "block",
 	inline: "inline",
-	block_inline : "block-inline",
-	auto: "auto"
+	inline_block : "inline-block",
+	auto: "auto",
+	none: "none",
+	bottom: "bottom",
+	top: "top",
+	relative: "relative",
+	no_repeat: "no-repeat"
 };
 
 /** 
@@ -131,10 +147,12 @@ var eManager = {
 	run: function (name) {
 	    e$("doc").clear();
 		ePage[name]();
+		eManager.loaddef();
 	},
 	
 	append: function (name) {
 		ePage[name]();
+		eManager.loaddef();
 	},
 	
 	remove: function (name) {
@@ -147,6 +165,11 @@ var eManager = {
 	
 	get: function (name) {
 		return ePage[name];
+	},
+	onLoad: function(func) {
+		eManager.loaddef = func;
+	},
+	loaddef : function () {
 	}
 };
 
@@ -490,6 +513,28 @@ var DomCreator = function () {
 		}
 	};
 	
+	this.span = function (id , cl) {
+		if (arguments[1] != undefined) {
+			return '<span id='+id+' class='+cl+'></span>';
+		}
+		else if (arguments[0] != undefined) {
+			return '<span id='+id+'></span>';
+		}
+		else {
+			return '<span><span>';
+		}
+	};
+	
+	this.style = function (data) {
+		if (arguments[0] != undefined) {
+		 return '<style>'+data+'</style>';
+		}
+		else {
+			return '<style></style>';
+			
+		}
+	}
+	
 	this.init = function (n) {
 		window.initNode(n);
 	};
@@ -667,6 +712,16 @@ var initDoc = function (doc) {
 	   $('body').append(node);
    };
    
+   doc.addSpan = function (id,cl) {
+	   var node = eDom.span(id,cl);
+	   $('body').append(node);
+   };
+   
+   doc.addStyle = function (data) {
+	   var node = eDom.style(data);
+	   $('head').append(node);
+   };
+   
    doc.setTitle = function (name) {
 	   document.title = name;
    };
@@ -734,6 +789,19 @@ var initNode = function (dom) {
 	   }
    };
    
+   /** @issue The idea is to select in CSS like a:hover
+   * but it doesn't seem to work
+   *
+   dom.extendCSS = function (stylesheet,type) {
+	   dom[type] = function () {
+		   for (key in stylesheet) {
+		   var eKey = parseCSS(key);
+		   $(this).css(eKey,stylesheet[key]);
+	   }
+	   };
+   };
+   */
+   
    dom.addClass = function (cl) {
 	   $(dom).addClass(cl);
    };
@@ -767,9 +835,14 @@ var initNode = function (dom) {
    };
    
    dom.selectChild = function (num) {
-	   var uid = dom.getChild(num).id;
-	   console.log(uid);
-	   return e$(uid);
+	 if(dom.getChild(num).id != "") {
+		 var uid = dom.getChild(num).id;
+		 return e$(uid);
+	 }
+	 else {
+		 eDom.init(dom.getChild(num));
+		 return dom.getChild(num);
+	 }
    };
    
    dom.insertAt = function (index,n) {
@@ -787,8 +860,23 @@ var initNode = function (dom) {
    dom.insertAll = function (n) {
 	   for (var i=0;i < n.length; i++) {
 		   var node = dom.getChild(i);
-		   $(node).insert(n[i]);
+		   $(node).append(n[i]);
 	   }
+   };
+   
+   dom.move = function (id) {
+	   var node = dom;
+	   console.log(node);
+	   dom.destroy();
+	   e$(id).insert(node);
+	   
+   };
+   
+   dom.moveOut = function () {
+	   var node = dom;
+	   var parent = $(dom).parent();
+	   dom.destroy();
+	   $(node).insertAfter(parent);
    };
    
    dom.setLink = function (lnk) {
@@ -843,6 +931,13 @@ var parseCSS = function (val) {
 
 
 var e$ = ezo; // e$ is mainly used to reduce code
+
+ezo.toString = function () {
+	var developer = "";
+	var copyright = "2015";
+	var version = "0.2.5";
+	return "Name: ezoJS\n Developer: "+developer+"\nVersion: "+version+"\nCopyright: "+copyright;
+}
 
 
 /**
