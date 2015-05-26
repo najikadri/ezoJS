@@ -23,6 +23,16 @@ colors listed below.
 * pumpkin
 * silver
 * asbestos
+* monza
+* flamingo
+* waxFlower
+* cabaret
+* dodgerBlue
+* pictonBlue
+* malibu
+* gossip
+* shamrock
+* capeHoney
 
 ##eCon
 eCon is an object with constants for CSS. Use it during CSS
@@ -49,6 +59,10 @@ var line = {
 * inline
 * block_inline
 * auto
+* relative
+* bottom
+* top
+* no_repeat
 
 ##eSyntax
 eSyntax is an object with constant for hljs **(highlight.js)**. HighlightJS is a syntax highliter that highlight anything between `<pre><code class="java"></code></pre>`.
@@ -105,6 +119,8 @@ called for the first page or to merge and append a page with another
 search for a page with the name provided and delete it from the array **(set as null)**
 ####get(name)
 get the page as function rather than calling it
+####onLoad (func)
+set a function that is called when a page is ran or appended by default
 
 ##eData
 eData is a data manager that saves nodes, css , and pages locally for later use. 
@@ -187,6 +203,10 @@ returns a button with id and its type and class with name and value
 returns a script `<script></script>` with its source , type and boolean if async or defer
 ####stylesheet(href,rel,type)
 returns a link with href and rel and type
+####style(data)
+returns a style tag with its content
+####span(id,cl)
+returns a span with its id and class passed
 
 *Note: It is a `<link></link>` thus it can be used for things other than stylesheet. But in ezoJS is named stylesheet since it is commonly used.*
 ####custom(tag,id,cls)
@@ -308,6 +328,10 @@ set name attribute of the node
 set value attribute of the node
 ####destory()
 remove the node from the body
+####move(id)
+move the node from its place and place it inside another node of the id passed
+####moveOut()
+move the node outside the parent node after it
 
 ##parseCSS(val)
 function used to parse keys of an object to be compatible for CSS styling
