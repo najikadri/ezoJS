@@ -1,4 +1,4 @@
-/**
+/** 
 * EzoJS is a JavaScript framework that create html documents and cascading style sheets plus add-ons for jQuery.
 * The main purpose of EzoJS is to to let one JavaScript file with one html file to handle all the website and html and CSS thus
 * reducing development time and lessen the files needed for 
