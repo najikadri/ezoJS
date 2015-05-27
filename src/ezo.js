@@ -342,11 +342,17 @@ var DomCreator = function () {
 	};
 	
 	this.img = function (id,src,alt) {
-		if (arguments[1] != undefined) {
-			return '<img src='+src+' alt='+alt+'/>';;
+		if (arguments[2] != undefined) {
+			return '<img id='+id+'src='+src+' alt='+alt+'/>';
+		}
+		else  if (arguments[1] != undefined){
+			return '<img id='+id+'src='+src+'/>';
+		}
+		else  if (arguments[0]){
+			return '<img id='+id+'></img>';
 		}
 		else {
-			return '<img src='+src+'/>';
+			return '<img></img>'
 		}
 		
 	};
