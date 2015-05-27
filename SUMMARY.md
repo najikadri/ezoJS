@@ -1,5 +1,6 @@
 # Summary
 
+* [introduction](README.md)
 * [Introduction](docs/introduction.md)
 * [Installation](docs/Installation.md)
 * [Build](docs/Build.md)
@@ -17,4 +18,5 @@
    * [e$(doc)](docs/API.md#edoc)
    * [e$(dom)](docs/API.md#edom-1)
    * [CSS Parser](docs/API.md#parsecssval)
+* Demos
 
