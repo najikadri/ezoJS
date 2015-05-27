@@ -19,6 +19,6 @@
    * [e$(dom)](docs/API.md#edom-1)
    * [CSS Parser](docs/API.md#parsecssval)
 * Demos
-   * ezoJS greenmountain
-   * ezoJS Calculator
+   * [ezoJS greenmountain](docs/ezoJS_greenmountain.md)
+   * [ezoJS Calculator](docs/ezoJS_Calculator.md)
 
