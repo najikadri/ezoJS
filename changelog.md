@@ -1,4 +1,5 @@
 ##version 0.2.5
+* fixed eDom img creation bug
 * fixed dom insertion bug
 * new eCon constants
 * new eColor colors for CSS styling
