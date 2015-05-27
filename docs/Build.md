@@ -14,6 +14,7 @@ This is how a default html template must look like for ezoJS to work.
   </body>
  </html>
 ```
+Yes, an empty template is needed only
 ## CSS Syntax
 In ezoJS the syntax for css is as same as the css syntax except that you must use _ **(underscore)** instead of - **(dash)**
 
@@ -54,7 +55,7 @@ In ezoJS pages are actually a function. eManager (learn more from API section) a
 //pages
 var mainPage = function () {
   e$("doc").setTitle("ezoJS | Home"); //set documents title
-  e$("doc").addHeader(1,"title"); //add header to the body
+  e$("doc").addHeading(1,"title"); //add header to the body
   e$("title").setTitle("ezoJS Demo"); //set text for the header
   e$("title").setCSS(styles.title); //set CSS for the header
 };
