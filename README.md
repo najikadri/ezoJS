@@ -31,7 +31,7 @@ or read the document from the [summary page](SUMMARY..md) in Github
 - [ ] Table creation by eDom
 - [ ] Save pages and nodes locally by eData
 - [ ] More ezoJS node manipulation and animation
-- [ ] eSQL : Store data in local storage like SQL
+- [ ] eSQL : Store data in Web SQL and Local Storage
 
 ## Contribute
  Bugs or issues found in ezoJS is in the main ezo.js file under ***@bug*** or ***@issue***.
