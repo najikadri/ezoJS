@@ -19,7 +19,7 @@
    * [e$(doc)](docs/API.md#edoc)
    * [e$(dom)](docs/API.md#edom-1)
    * [CSS Parser](docs/API.md#parsecssval)
-* Demos
+* [Demos](demos.md)
    * [ezoJS greenmountain](docs/ezoJS_greenmountain.md)
    * [ezoJS Calculator](docs/ezoJS_Calculator.md)
 
