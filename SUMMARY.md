@@ -20,4 +20,5 @@
    * [CSS Parser](docs/API.md#parsecssval)
 * Demos
    * ezoJS greenmountain
+   * ezoJS Calculator
 
