@@ -1,5 +1,7 @@
 # ezoJS
 
+[![Join the chat at https://gitter.im/najikadri/ezoJS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/najikadri/ezoJS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 JavaScript Website Builder from a single JS file
 ![Splashscreen](ezoJS.png)
 ## What is ezoJS
