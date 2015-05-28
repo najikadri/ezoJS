@@ -221,6 +221,8 @@ returns a span with its id and class passed
 *Note: It is a `<link></link>` thus it can be used for things other than stylesheet. But in ezoJS is named stylesheet since it is commonly used.*
 ####custom(tag,id,cls)
 returns a custom tag for you.
+####textarea(id,rows,columns,class)
+retuns a text area with its id and rows and columns and class
 
 example:
 ```javascript
