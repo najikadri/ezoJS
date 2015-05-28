@@ -22,5 +22,5 @@
 * [Demos](demos.md)
    * [ezoJS greenmountain](docs/ezoJS_greenmountain.md)
    * [ezoJS Calculator](docs/ezoJS_Calculator.md)
-   * ezoJS Boxes
+   * [ezoJS Boxes](docs/ezojs_boxes.md)
 
