@@ -23,7 +23,7 @@ Read the [introduction](docs/introduction.md) page from the document to check wh
 Read  [ezoJS GitBook](http://najikadri.gitbooks.io/ezojs/) from the website.
 or read the document from the [summary page](SUMMARY..md) in Github
 ##Demos
-* ezoJS Boxes [(Live Demo)](http://bit.ly/ezoJS_Boxes) [(source)](demos/ezojs-boxes) (document)
+* ezoJS Boxes [(Live Demo)](http://bit.ly/ezoJS_Boxes) [(source)](https://github.com/najikadri/ezoJS/tree/master/demos/ezoJS-boxes) (document)
 
 
 ##Stable Release Features
