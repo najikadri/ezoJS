@@ -7,7 +7,7 @@ JavaScript SPA Website Builder from a single JS file
 ## What is ezoJS
 ezoJs  prononouced **(E-Zoo)** is a JavaScript Framework that build websites in a single JS file. ezoJS has global selectors , tools to speed up production and simplify it which means less files and less size and easy to manage projects. Read the document for more information.
 ### Version
-**Alpha** - 0.2.5 [(Changelog)](changelog.md)
+**Alpha** - 0.2.6 [(Changelog)](changelog.md)
 ##Installation
 Git
 ```
