@@ -1,3 +1,7 @@
+##version 0.2.6
+* fixed insertion bug
+* new eDom creation : textarea
+* new dom functions `e$(element)insertforAll()` , `e$(element).setAttr(a,v)`, `e$(element).getAttr(a)`
 ##version 0.2.5
 * fixed eDom img creation bug
 * fixed dom insertion bug
