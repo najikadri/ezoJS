@@ -541,6 +541,25 @@ var DomCreator = function () {
 		}
 	}
 	
+	this.textArea =  function(id,rows,column,cl){
+		if (arguments[3] != undefined) {
+			return '<textarea id='+id+' rows='+rows+' cols='+column+' class='+cl+'> </textarea>';
+		}
+		else if (arguments[2] != undefined) {
+			return '<textarea id='+id+' rows='+rows+' cols='+column+'> </textarea>';
+		}
+		else if (arguments[1] != undefined) {
+			return '<textarea id='+id+' rows='+rows+'> </textarea>';
+			
+		}
+		else if (arguments[0] != undefined) {
+			return '<textarea id='+id+'> </textarea>';
+		}
+		else {
+			return '<textarea></textarea>'
+		}
+	}
+	
 	this.init = function (n) {
 		window.initNode(n);
 	};
@@ -584,6 +603,11 @@ var initDoc = function (doc) {
 	
 	doc.addDiv = function (id,cl) {
 		var node = eDom.div(id,cl);
+		$('body').append(node);
+	};
+	
+	doc.addTextArea  = function(id,r,c,cl) {
+		var node = eDom.textArea(id,r,c,cl);
 		$('body').append(node);
 	};
 	
@@ -825,8 +849,7 @@ var initNode = function (dom) {
    };
    
    dom.insert = function (n) {
-
-		     $(dom).append(n);
+	 $(dom).append(n);
    };
    
    dom.insertAll = function (n) {
@@ -840,6 +863,7 @@ var initNode = function (dom) {
 	   return dom.children[num];
    };
    
+  
    dom.selectChild = function (num) {
 	 if(dom.getChild(num).id != "") {
 		 var uid = dom.getChild(num).id;
@@ -851,19 +875,7 @@ var initNode = function (dom) {
 	 }
    };
    
-   dom.insertAt = function (index,n) {
-	   var node = dom.getChild(index);
-	      if (typeof(n) === 'Array') {
-		   for (var i=0;i < n.length;i++) {
-			   $(node).append(n[i]);
-		   }
-	   }
-	   else {
-		     $(node).append(n);
-	   }
-   };
-   
-   dom.insertAll = function (n) {
+   dom.insertforAll = function (n) {
 	   for (var i=0;i < n.length; i++) {
 		   var node = dom.getChild(i);
 		   $(node).append(n[i]);
@@ -896,6 +908,14 @@ var initNode = function (dom) {
    dom.setValue = function (val) {
 	   $(dom).attr('value',val);
    };
+   
+   dom.setAttr = function (id,val) {
+	   $(dom).attr(id,val);
+   };
+   
+   dom.getAttr = function (id) {
+	   return $(dom).attr(id);
+   }
 	
 	dom.destroy = function () {
 		dom.remove();
