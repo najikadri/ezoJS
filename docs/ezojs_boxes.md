@@ -234,3 +234,4 @@ $(document).ready(function ( ) {
 ##Step Nine
 Test the website/app , write at the first line your blog post title and then the rest your paragraph. You should see a box like this:
 ![](bm2.PNG)
+You can make as much blog post as you want and save them to check them later on
