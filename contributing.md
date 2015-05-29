@@ -19,7 +19,7 @@ Yes you can as long it is related to ezoJS main purposes
 
 You may not. You shouldn't any function from ezoJS made by the developer
 
-**Can I edit a function? **
+**Can I edit a function?**
 
 It is most recommended that you edit functions under @bug and @issue. But you can edit a function if you have a simpler way or compatible with most browsers
 
