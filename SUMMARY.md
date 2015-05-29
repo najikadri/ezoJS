@@ -23,4 +23,5 @@
    * [ezoJS greenmountain](docs/ezoJS_greenmountain.md)
    * [ezoJS Calculator](docs/ezoJS_Calculator.md)
    * [ezoJS Boxes](docs/ezojs_boxes.md)
+* contributing
 
