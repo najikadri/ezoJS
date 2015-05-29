@@ -4,6 +4,7 @@ ezoJS is an easy project to work on and to contribute to, since ezoJS source cod
 In the [ezo.js](src/ezo.js) source code, I put tags in my comments under `@bug` and `@issue`! These tags means that I either going to fix it later or that I couldn't find a solution
 ## Creating Demos & Projects
 The best way to contribute to ezoJS  is by making projects and demos to show developers how to use ezoJS. Your project will be listed in our demos list to be seen by all developers. You can add your books by these three ways:
+
 1. Forking the repo and sending pull request
 2. Share your project on ezoJS Gitter room
 3. Contact me via [email](naji-newman-2000@hotmail.com)
