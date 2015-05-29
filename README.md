@@ -23,7 +23,7 @@ Read the [introduction](docs/introduction.md) page from the document to check wh
 Read  [ezoJS GitBook](http://najikadri.gitbooks.io/ezojs/) from the website.
 or read the document from the [summary page](SUMMARY..md) in Github
 ##Demos
-* ezoJS Boxes [(Live Demo)](http://bit.ly/ezoJS_Boxes) [(source)](https://github.com/najikadri/ezoJS/tree/master/demos/ezoJS-boxes) (document)
+* ezoJS Boxes [(Live Demo)](http://bit.ly/ezoJS_Boxes) [(source)](https://github.com/najikadri/ezoJS/tree/master/demos/ezoJS-boxes) [(document)](https://github.com/najikadri/ezoJS/blob/master/docs/ezojs_boxes.md)
 
 
 ##Stable Release Features
@@ -38,7 +38,7 @@ or read the document from the [summary page](SUMMARY..md) in Github
 - [ ] eSQL : Store SQL data in WebSQL and Local Storage
 
 ## Contributing
-Read Contributing.md to contribute to this project
+Read [contributing.md](contributing.md) to contribute to this project
  
 I will be glad if you contributed to this project
 
