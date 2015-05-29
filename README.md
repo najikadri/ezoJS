@@ -24,6 +24,8 @@ Read  [ezoJS GitBook](http://najikadri.gitbooks.io/ezojs/) from the website.
 or read the document from the [summary page](SUMMARY..md) in Github
 ##Demos
 * ezoJS Boxes [(Live Demo)](http://bit.ly/ezoJS_Boxes) [(source)](https://github.com/najikadri/ezoJS/tree/master/demos/ezoJS-boxes) [(document)](https://github.com/najikadri/ezoJS/blob/master/docs/ezojs_boxes.md)
+* ezoJS Green Mountain **(in development)**
+* ezoJS Calculator **(in development)**
 
 
 ##Stable Release Features
