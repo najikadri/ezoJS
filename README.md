@@ -26,8 +26,8 @@ or read the document from the [summary page](SUMMARY..md) in Github
 * ezoJS Boxes [(Live Demo)](http://bit.ly/ezoJS_Boxes) [(source)](https://github.com/najikadri/ezoJS/tree/master/demos/ezoJS-boxes) [(document)](https://github.com/najikadri/ezoJS/blob/master/docs/ezojs_boxes.md)
 * ezoJS Green Mountain **(in development)**
 * ezoJS Calculator **(in development)**
-
-
+##Issues
+https://github.com/najikadri/ezoJS/issues
 ##Stable Release Features
  The first **stable version** of ezoJS will be released once all features listed below are added.
  
