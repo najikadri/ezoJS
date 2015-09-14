@@ -18,7 +18,7 @@ Yes you can as long it is related to ezoJS main purposes
 
 **Can I remove functions or original code?**
 
-You may not. You shouldn't any function from ezoJS made by the developer
+You may not. You shouldn't remove any function from ezoJS made by the developer
 
 **Can I edit a function?**
 
