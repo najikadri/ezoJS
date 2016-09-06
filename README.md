@@ -2,10 +2,10 @@
 
 [![Join the chat at https://gitter.im/najikadri/ezoJS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/najikadri/ezoJS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-JavaScript SPA Website Builder from a single JS file
+Create Websites HTML & CSS using only JavaScript
 ![Splashscreen](ezoJS.png)
 ## What is ezoJS
-ezoJs  prononouced **(E-Zoo)** is a JavaScript Framework that build websites in a single JS file. ezoJS has global selectors , tools to speed up production and simplify it which means less files and less size and easy to manage projects. Read the document for more information.
+ezoJs  prononouced **(E-Zoo)** is a JavaScript Framework/Library that allows you build simple websites in a single JS file. With ezoJS you can create html pages and elements and mainuplate their css styling using a single JS file. ezoJS has global selectors , tools to speed up production and simplify it which means less files and less size and easy to manage projects. Read the document for more information.
 ### Version
 **Alpha** - 0.2.6 [(Changelog)](changelog.md)
 ##Installation
